@@ -68,7 +68,7 @@ def min_cost_flow(N, K, s, t):
             capacity[p[cur]][cur] -= f
             capacity[cur][p[cur]] += f
             cur = p[cur]
-    if flow < K:
+    if flow <= K:
         return costv
     else:
         return -1
