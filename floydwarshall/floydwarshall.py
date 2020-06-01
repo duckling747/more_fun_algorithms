@@ -1,7 +1,7 @@
 from sys import stdin
 
 def setup(V):
-    return [ [float('inf') for i in range(V)] for j in range(V) ]
+    return [ [float('inf') for _ in range(V)] for _ in range(V) ]
 
 def floydwarshall(V):
     for k in range(V):
@@ -20,4 +20,4 @@ for _ in range(V):
     distances[int(line_arr[0])][int(line_arr[1])] = int(line_arr[2])
 
 floydwarshall(V)
-print(distances)
+print(*distances, sep='\n')
