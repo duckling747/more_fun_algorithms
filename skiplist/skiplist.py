@@ -59,7 +59,7 @@ class Skiplist:
         
         
     def print_me(self):
-        print("\n******Skip List*******")
+        print("Skip list:")
         head = self.header
         for lvl in range(self.level+1):
             print("Level {}: ".format(lvl), end = " ")
